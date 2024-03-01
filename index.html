@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin-Library</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h2 class="headline"><strong>Odin's Library</strong></h2>
+
+    <button type="button" class="addBook">Add Book</button>
+
+    <div class="container"></div>
+    <dialog class="dialog">
+        <form class="addInfoBook">
+            <button type="button" class="close">&#10060;</button>
+            <h3 id="headline-2">Enter information about your book</h3>
+            <input type="text" name="title" id="title" required maxlength="50" placeholder="Title">
+            <input type="text" name="author" id="author" required maxlength="50" placeholder="Author">
+            <input type="number" name="pages" id="pages" required maxlength="4" placeholder="number of pages">
+            <label id="label"><h3>Have you read this book?</h3></label>
+            <input type="radio" name="read" id="Yes" value="Yes"><strong id="strong">Yes</strong>
+            <input type="radio" name="read" id="No" value="No"><strong id="strong">No</strong>
+            <button type="button" id="AddBook">Add</button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
