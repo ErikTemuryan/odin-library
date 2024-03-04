@@ -27,6 +27,7 @@ closeButton.addEventListener("click", () => {
 function displayBook(book) {
     const container = document.querySelector('.container');
     const bookContainer = document.createElement('div');
+    bookContainer.classList.add('bookContainer');
 
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('delete');
@@ -45,7 +46,7 @@ function displayBook(book) {
 
     const pagesParagraph = document.createElement('p');
     pagesParagraph.classList.add('pages');
-    pagesParagraph.textContent = book.pages + ' pgs';
+    pagesParagraph.textContent = book.pages + ' pages';
 
     const readButton = document.createElement('button');
     readButton.classList.add(book.read ? 'read' : 'not-read');

@@ -25,7 +25,9 @@
   
 .container {
     display: flex;
-    height: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 20rem;
     width: 80%;
     margin-top: 30px;
     margin-left: 50px;
@@ -60,4 +62,48 @@
     color: #c7911b;
     background-color: lightgray;
 }
-  
+
+.bookContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: lightyellow;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 5px solid #FFAE00;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.title, .author, .pages {
+    background-color: lightyellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.read, .not-read {
+    display: flex;
+    background-color: lightgray;
+    border: 2px solid #FFAE00;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 100%;
+}
+
+.delete {
+    display: flex;
+    background-color: lightgray;
+    border: 2px solid #FFAE00;
+    margin-left: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 100%;
+}
